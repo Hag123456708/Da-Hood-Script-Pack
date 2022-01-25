@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(''))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk'))()
 loadstring(game:HttpGet(''))()
 loadstring(game:HttpGet(''))()
 loadstring(game:HttpGet(''))()
