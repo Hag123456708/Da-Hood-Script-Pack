@@ -3,12 +3,17 @@ wait(0.69420)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz'))()
 wait(1.5)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware'))()
-wait(6.9420)
+wait(4)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/faded'))()
 
-game.ReplicatedStorage.RemoteEvent.OnClientEvent:Connect(function()
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Load FINISHED",
-        Text = "scriptpack by notsky"
-    })
-end)
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "LOAD FINISHED";
+ Text = "by notsky";
+ Icon = "";
+ Duration = 5;
+ Button1 = "ok";
+ Callback = NotificationBindable;
+})
