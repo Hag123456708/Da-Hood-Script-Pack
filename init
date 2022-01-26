@@ -1,10 +1,46 @@
+local plr = game.Players.LocalPlayer
+local premium = false
+
+
+if plr.Name == "NotSkyy00" then
+    rconsoleprint('@@YELLOW@@')
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+    rconsoleprint("Script pack by NotSkyy00")
+    rconsoleprint("\n")
+    rconsoleprint("-------------------------------------------")
+    messagebox("Thanks for buying premium","PREMIUM!!",0)
+	print("player is a premium user")
+	rconsoleprint("\n")
+	rconsoleprint("Premium : ON")
+	rconsoleprint("\n")
+	local premium = true
+else
+    rconsoleprint('@@RED@@')
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+    rconsoleprint("Script pack by NotSkyy00")
+    rconsoleprint("\n")
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+    rconsoleprint("Premium : off")
+    rconsoleprint("\n")
+    rconsoleprint("buy premium at https://discord.gg/f9TFejXMJX (copied to clipboard)")
+    setclipboard("https://discord.gg/f9TFejXMJX")
+    rconsoleprint("\n")
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+end
+wait(0.5)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk'))()
 wait(0.69420)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz'))()
 wait(1.5)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware'))()
-wait(4)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/faded'))()
+if premium == true then
+    
+end
+
 
 
 local NotificationBindable = Instance.new("BindableFunction")
