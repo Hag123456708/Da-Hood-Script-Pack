@@ -38,7 +38,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Scrip
 wait(1.5)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware'))()
 if premium == true then
-    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/free-animation-pack'))()
 end
 
 
