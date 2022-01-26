@@ -32,13 +32,13 @@ else
     rconsoleprint("\n")
 end
 wait(0.5)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk", true))()
 wait(0.69420)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz'))()
-wait(1.5)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz", true))()
+wait(0.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware", true))()
 if premium == true then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/free-animation-pack'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/free-animation-pack", true))()
 end
 
 
