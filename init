@@ -46,9 +46,9 @@ end
 local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification",  {
- Title = "LOAD FINISHED";
- Text = "by notsky";
- Icon = "";
+ Title = "🔔 Notification🔔";
+ Text = "load Finished!!";
+ Icon = "7519363654";
  Duration = 5;
  Button1 = "ok";
  Callback = NotificationBindable;
