@@ -48,7 +48,7 @@ NotificationBindable.OnInvoke = callback
 game.StarterGui:SetCore("SendNotification",  {
  Title = "🔔 Notification🔔";
  Text = "load Finished!!";
- Icon = "7519363654";
+ Icon = 7519363654;
  Duration = 5;
  Button1 = "ok";
  Callback = NotificationBindable;
