@@ -41,8 +41,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Scrip
 
 if premium == true then
     print"premium check : ok"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/antiafk"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack"))()
 end
+
+if plr.Name == "NotSkyy00" then
+	plr.Name = "「👑」Sky"
 
 
 
