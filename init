@@ -1,5 +1,6 @@
 local plr = game.Players.LocalPlayer
 local premium = false
+local skygodsname = "「👑」Sky"
 local gods = {
 	"NotSkyy00",
 	"Qlmrdr2008terbis"
@@ -49,10 +50,6 @@ if premium == true then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack"))()
 end
 
-if plr.Name == gods then
-	plr.Name = "「👑」Sky"
-end
-
 
 
 local NotificationBindable = Instance.new("BindableFunction")
@@ -65,3 +62,5 @@ game.StarterGui:SetCore("SendNotification",  {
  Button1 = "ok";
  Callback = NotificationBindable;
 })
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+event:FireServer("Script Pack by NotSkyy00 is loaded!!", "All")
