@@ -1,6 +1,9 @@
 local plr = game.Players.LocalPlayer
 local premium = false
-
+local gods = {
+	"NotSkyy00",
+	"Qlmrdr2008terbis"
+}
 
 
 if plr.Name == "NotSkyy00" then
@@ -46,7 +49,7 @@ if premium == true then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack"))()
 end
 
-if plr.Name == "NotSkyy00" then
+if plr.Name == gods then
 	plr.Name = "「👑」Sky"
 end
 
