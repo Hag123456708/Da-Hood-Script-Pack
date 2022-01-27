@@ -48,6 +48,7 @@ end
 
 if plr.Name == "NotSkyy00" then
 	plr.Name = "「👑」Sky"
+end
 
 
 
