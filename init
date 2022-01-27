@@ -34,6 +34,7 @@ else
 end
 wait(0.1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/alwaisnight"))()
 wait(0.1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
 wait(0.1)
