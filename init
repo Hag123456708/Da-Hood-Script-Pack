@@ -2,6 +2,7 @@ local plr = game.Players.LocalPlayer
 local premium = false
 
 
+
 if plr.Name == "NotSkyy00" then
     rconsoleprint('@@YELLOW@@')
     rconsoleprint("-------------------------------------------")
@@ -14,7 +15,7 @@ if plr.Name == "NotSkyy00" then
 	rconsoleprint("\n")
 	rconsoleprint("Premium : ON")
 	rconsoleprint("\n")
-	local premium = true
+	premium = true
 else
     rconsoleprint('@@RED@@')
     rconsoleprint("-------------------------------------------")
@@ -31,14 +32,16 @@ else
     rconsoleprint("-------------------------------------------")
     rconsoleprint("\n")
 end
-wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk", true))()
-wait(0.69420)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz", true))()
-wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware", true))()
+wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
+wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
+wait(0.1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware"))()
+
 if premium == true then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack", true))()
+    print"premium check : ok"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack"))()
 end
 
 
