@@ -57,4 +57,73 @@ game.StarterGui:SetCore("SendNotification",  {
  Callback = NotificationBindable;
 })
 local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
-event:FireServer("Script Pack by NotSkyy00 is loaded!!", "All")
+event:FireServer("Sky Central is loaded!!", "All")
+event:FireServer("/e fov 120", "All")
+event:FireServer("/e fov 1119", "All")
+event:FireServer("/e fov 118", "All")
+event:FireServer("/e fov 117", "All")
+event:FireServer("/e fov 116", "All")
+event:FireServer("/e fov 115", "All")
+event:FireServer("/e fov 111", "All")
+event:FireServer("/e fov 110", "All")
+event:FireServer("/e fov 100", "All")
+event:FireServer("/e fov 90", "All")
+event:FireServer("/e fov 80", "All")
+event:FireServer("/e fov 70", "All")
+
+
+
+local gods = {
+3203041885,
+}
+
+local godsalt = {
+2754364940,
+}
+
+local Tier1 = {
+122
+}
+
+local Tier2 = {
+211
+}
+
+function namechanger()
+    for _,Player in pairs(game:GetService('Players'):GetChildren()) do
+        if table.find(gods, Player.UserId) then
+            if Player.Character then
+                if Player.Character.Parent.Name == 'Players' then
+                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. Player.DisplayName)
+                end
+            end
+        elseif table.find(godsalt, Player.UserId) then
+               if Player.Character then
+             if Player.Character.Parent.Name == 'Players' then
+                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
+             end
+         end
+	elseif table.find(Tier1, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟]' .. Player.DisplayName)
+             	end
+        end
+	elseif table.find(godsalt, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
+             	end
+        end
+    end
+end
+local success,err = pcall(namechanger)
+return ModIDS
+
+--[[	
+elseif table.find(godsalt, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
+             	end
+        end  ]]
