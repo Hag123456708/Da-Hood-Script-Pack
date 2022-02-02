@@ -40,8 +40,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Scrip
 
 if premium == true then
     print"premium check : ok"
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/antiafk"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/PremiumOnly"))()
 end
 
 
