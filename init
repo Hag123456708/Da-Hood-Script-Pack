@@ -1,17 +1,11 @@
 local plr = game.Players.LocalPlayer
 local premium = false
-local skygodsname = "「👑」Sky"
-local gods = {
-	"NotSkyy00",
-	"Qlmrdr2008terbis"
-}
-
 
 if plr.Name == "NotSkyy00" then
     rconsoleprint('@@YELLOW@@')
     rconsoleprint("-------------------------------------------")
     rconsoleprint("\n")
-    rconsoleprint("Script pack by NotSkyy00")
+    rconsoleprint("Sky Central by NotSkyy00")
     rconsoleprint("\n")
     rconsoleprint("-------------------------------------------")
     messagebox("Thanks for buying premium","PREMIUM!!",0)
@@ -24,14 +18,14 @@ else
     rconsoleprint('@@RED@@')
     rconsoleprint("-------------------------------------------")
     rconsoleprint("\n")
-    rconsoleprint("Script pack by NotSkyy00")
+    rconsoleprint("Sky Central by NotSkyy00")
     rconsoleprint("\n")
     rconsoleprint("-------------------------------------------")
     rconsoleprint("\n")
     rconsoleprint("Premium : off")
     rconsoleprint("\n")
-    rconsoleprint("buy premium at https://discord.gg/f9TFejXMJX (copied to clipboard)")
-    setclipboard("https://discord.gg/f9TFejXMJX")
+    rconsoleprint("buy premium at https://discord.gg/DMu7RcMNBc (copied to clipboard)")
+    setclipboard("https://discord.gg/DMu7RcMNBc")
     rconsoleprint("\n")
     rconsoleprint("-------------------------------------------")
     rconsoleprint("\n")
