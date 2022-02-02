@@ -1,0 +1,37 @@
+local plr = game.Players.LocalPlayer
+
+
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Sky central")
+
+local serv = win:Server("da hood", "http://www.roblox.com/asset/?id=6031075938")
+
+local general = serv:Channel("General")
+
+general:Button("free animation pack", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/freeanimationpack"))()
+end)
+
+general:Button("spaceware (silent aim and animation changer)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware"))()
+    DiscordLib:Notification("Notification", "credit to i-nasa for script!", "Okay!")
+end)
+
+general:Button("commands", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
+    DiscordLib:Notification("Notification", "prefix '!' , by GS26", "Okay!")
+end)
+
+general:Button("trash talk", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
+    DiscordLib:Notification("Notification", "the key is 'y' ", "Okay!")
+end)
+
+general:Button("change to day/night", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/alwaisnight"))()
+end)
+
+general:Button("anti afk", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/antiafk"))()
+end)
