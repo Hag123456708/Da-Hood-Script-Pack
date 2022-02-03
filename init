@@ -105,7 +105,7 @@ function swagnamesprout()
             end
         end
     end
-end
+
 local success,err = pcall(swagnamesprout)
 return ModIDS
 
@@ -116,4 +116,3 @@ elseif table.find(godsalt, Player.UserId) then
               	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
              	end
         end  ]]
-
