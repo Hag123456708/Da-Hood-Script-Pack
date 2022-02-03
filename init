@@ -1,3 +1,4 @@
+local cam = game.Workspace.Camera
 local plr = game.Players.LocalPlayer
 local premium = false
 
@@ -30,14 +31,15 @@ else
     rconsoleprint("-------------------------------------------")
     rconsoleprint("\n")
 end
-wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/alwaisnight"))()
-wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
-wait(0.1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware"))()
-
+if premium == false then
+	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/alwaisnight"))()
+	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
+	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware"))()
+end
 if premium == true then
     print"premium check : ok"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/PremiumOnly"))()
@@ -57,19 +59,6 @@ game.StarterGui:SetCore("SendNotification",  {
 })
 local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
 event:FireServer("Sky Central is loaded!!", "All")
-event:FireServer("/e fov 120", "All")
-event:FireServer("/e fov 1119", "All")
-event:FireServer("/e fov 118", "All")
-event:FireServer("/e fov 117", "All")
-event:FireServer("/e fov 116", "All")
-event:FireServer("/e fov 115", "All")
-event:FireServer("/e fov 111", "All")
-event:FireServer("/e fov 110", "All")
-event:FireServer("/e fov 100", "All")
-event:FireServer("/e fov 90", "All")
-event:FireServer("/e fov 80", "All")
-event:FireServer("/e fov 70", "All")
-
 
 
 local gods = {
@@ -126,3 +115,4 @@ elseif table.find(godsalt, Player.UserId) then
               	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
              	end
         end  ]]
+end
