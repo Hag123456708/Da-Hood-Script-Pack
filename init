@@ -69,11 +69,11 @@ local godsalt = {
 }
 
 local Tier1 = {
-122
+122,
 }
 
 local Tier2 = {
-211
+211,
 }
 
 function namechanger()
