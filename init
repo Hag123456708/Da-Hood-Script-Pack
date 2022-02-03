@@ -76,7 +76,7 @@ local Tier2 = {
 211,
 }
 
-function namechanger()
+function swagnamesprout()
     for _,Player in pairs(game:GetService('Players'):GetChildren()) do
         if table.find(gods, Player.UserId) then
             if Player.Character then
@@ -90,21 +90,23 @@ function namechanger()
                     Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
              end
          end
-	elseif table.find(Tier1, Player.UserId) then
+	elseif table.find(Tier2, Player.UserId) then
 		if Player.Character then
 			if Player.Character.Parent.Name == 'Players' then
               	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟]' .. Player.DisplayName)
              	end
         end
-	elseif table.find(godsalt, Player.UserId) then
+	elseif table.find(Tier1, Player.UserId) then
 		if Player.Character then
 			if Player.Character.Parent.Name == 'Players' then
               	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
-             	end
+                    end
+                end
+            end
         end
     end
 end
-local success,err = pcall(namechanger)
+local success,err = pcall(swagnamesprout)
 return ModIDS
 
 --[[	
@@ -114,4 +116,4 @@ elseif table.find(godsalt, Player.UserId) then
               	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
              	end
         end  ]]
-end
+
