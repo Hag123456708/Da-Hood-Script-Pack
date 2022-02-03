@@ -1,4 +1,3 @@
-local cam = game.Workspace.Camera
 local plr = game.Players.LocalPlayer
 local premium = false
 
