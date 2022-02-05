@@ -1,118 +1,93 @@
-local plr = game.Players.LocalPlayer
-local premium = false
 
-if plr.Name == "NotSkyy00" then
-    rconsoleprint('@@YELLOW@@')
-    rconsoleprint("-------------------------------------------")
-    rconsoleprint("\n")
-    rconsoleprint("Sky Central by NotSkyy00")
-    rconsoleprint("\n")
-    rconsoleprint("-------------------------------------------")
-    messagebox("Thanks for buying premium","PREMIUM!!",0)
-	print("player is a premium user")
-	rconsoleprint("\n")
-	rconsoleprint("Premium : ON")
-	rconsoleprint("\n")
-	premium = true
-else
-    rconsoleprint('@@RED@@')
-    rconsoleprint("-------------------------------------------")
-    rconsoleprint("\n")
-    rconsoleprint("Sky Central by NotSkyy00")
-    rconsoleprint("\n")
-    rconsoleprint("-------------------------------------------")
-    rconsoleprint("\n")
-    rconsoleprint("Premium : off")
-    rconsoleprint("\n")
-    rconsoleprint("buy premium at https://discord.gg/DMu7RcMNBc (copied to clipboard)")
-    setclipboard("https://discord.gg/DMu7RcMNBc")
-    rconsoleprint("\n")
-    rconsoleprint("-------------------------------------------")
-    rconsoleprint("\n")
+-- Instances:
+
+local Sky = Instance.new("ScreenGui")
+local KeyFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Check = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local key = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+Sky.Name = "Sky"
+Sky.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Sky.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = Sky
+KeyFrame.BackgroundColor3 = Color3.fromRGB(16, 50, 49)
+KeyFrame.Position = UDim2.new(0.342197359, 0, 0.280727297, 0)
+KeyFrame.Size = UDim2.new(0, 322, 0, 169)
+
+UICorner.Parent = KeyFrame
+
+TextLabel.Parent = KeyFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.192546591, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "SkyCentral Key"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Check.Name = "Check"
+Check.Parent = KeyFrame
+Check.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Check.BorderSizePixel = 0
+Check.Position = UDim2.new(0.192546591, 0, 0.644970417, 0)
+Check.Size = UDim2.new(0, 200, 0, 50)
+Check.Font = Enum.Font.SourceSans
+Check.Text = "Check"
+Check.TextColor3 = Color3.fromRGB(255, 255, 255)
+Check.TextScaled = true
+Check.TextSize = 14.000
+Check.TextWrapped = true
+
+UICorner_2.Parent = Check
+
+key.Name = "key"
+key.Parent = KeyFrame
+key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+key.Position = UDim2.new(0.0279503111, 0, 0.349112421, 0)
+key.Size = UDim2.new(0, 302, 0, 41)
+key.Font = Enum.Font.SourceSans
+key.Text = "[Insert Key]"
+key.TextColor3 = Color3.fromRGB(0, 0, 0)
+key.TextScaled = true
+key.TextSize = 14.000
+key.TextTransparency = 0.770
+key.TextWrapped = true
+
+UICorner_3.Parent = key
+
+-- Scripts:
+
+local function GWEQH_fake_script() -- Check.LocalScript 
+	local script = Instance.new('LocalScript', Check)
+
+	local key = script.Parent.Parent.key
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if key.Text == "y#o-9LSz?V@^$r$E2-71jWb$SBwIwtT2o?8|NRahp0KK^14NuBE3Y4zf_3hSzpZnCnrmc=cNhr4lSwwp0uVd8miAdKIsdCMB0!QNtfAxQ||-NS6n?r@ce6Vx1p^A1IJlth6h*tz|SJdbH%29xFb=TX4XOyUDm44mbH*FZOwlRied#-QShK=8jZ#UyaZGHI?2p!RhC+nGfQ4JfYBz!0@mI9M$Hc_lcBbU&=M!u&Y$8jT#xU!UO9fnW1j8$u&NcYQsB%4vgJdXv?pEcn%L0Hl#0=Wg7Ek3Ku8yBKF#_nYM$!jG2a?AAM2#Oe-7KUIoqj^zrZa@UNqx%BjJ+u!&0o@Xt*d9hpkGREj4lVw!%QtQ-Vwu@fOxf?2507wdw+9&yoe_4ie3qPb0=32gMCND_%Rk^%rgmG#rwSxDhLt#gS9lObPL#mU=RxCieD8vaPan|Ovmg^_@-_YCm|st@QQvF%CJ*x7YKgt&97E|@Eq+N%*Uw9!ta$vi!bE!s8bC0OAd#*uX@bFvQJqb6WX42X%SDn?G?c39lUk?BuuOngFLvSOEb0e+5I10G#j#e!b&ZHbU+SRgZVg^k$0@wp2tSTmwxo!$-eV4X_hcae*#YCbYeK#YueIlOqKKB9G_9?Vi=CzkJ73n?Kj0IpLP-78aW9gq|ko%91IN-p%waIsn^0o5DW6hTp?P@47II2nh@aIn2Nt7k_RZOaRPp3u@17L_inpnkzgD90AU_873Mf@&wvu%2WPkzR7X!O=5!2@9PGFlDCCte6&V0G4C1aUQSGk2kZ-?Do4otCQLq$esV%jZ$LKUqQz!-1%9QaA&Q@2tZ8O|eT#JQg*-?c-O3rz4f4^s+xvC*9xP*n5^jA2nh53SbHBU3x?78-mt5xJLEXYG4%6Mhp2m88LxPt&y6UaNo@#TAF*qeDf?*LU^4MN*Wrz%f0HtKVK*X1L?YrLj%|AmXI_eu#OWRE16QfvPITUL=a!D$jOxxFb2QmRB1xTR1yp8&h&%R$*jD#StB^?pqV#A?kHWf49eu8eSqGyDI!W4TmFV^V2c-*Z4S8sJ$+wJe%FqiFpS&#LFU3ZLx-D4xJgy+rI8Ka9rNN*SVxVoImy&r|bz88E*%HyQ@kx!%JA5XvwEdx-x^PLXFy^_HH1|m$3z21MME&c40=S@*V7Aaho8z++RUtA8REplpuFA=CB+zM$_F9E#2eAICl|Tndoxm^$Vh1vKcHpdVZwmV033bLro@PLphUkP^40YxM=+=2GlXdVoW2zTx9ta+SgD6W0PXBHa6qeX3_TcSL#oB79lv7?##In!aY5JoNQL?k-PGJ-B?h*DGe5b@Bz^U%OE_=NL1!lEmzTyKqdW$B#H7cbR!wZrJ4j6MKx653&%Frfb@0B22g&0QI911C*NHv972@iO^yV$!T1G82$_mK-_wf_gY65vH%6CAIsy=1LGJ-XZZ7@+Ex&Ycj%eDy!LsMzSfsCH|zQadVYquiRpJSn=V9smBU@|o7mO4l7?7I%i|HC&$@vZ@D?M*2Zcea%KgK@Ey$gqSj#TxUjC0$^UMkDu&$FBuWmzW0evYFq723Tu=0A?UD50yR+%Gj!01*xhkKN=$hwGAX3zgJjYppb*0SXzyB3|=ln4HX?^1BE0bwKekuTkI&h2_op2|4HfmuTYUu0cWZ$EN_3kN^msk|au9Z-XJ=1t1AYB3bJnaps6H&cuCVhlN#Goc=K9EFsHs5?KoJ39QccHlxE_$$zWeHw$r$*j0AhrG*Xq=S1&jbbPXhlgE49&qiw4Pjh6lSBPKL4!40*7zl9RaZPPCdIqY+*tyc?b%oT5_sWkcC3^86!gZV+2=CnZCjAoSMZrTw%d?Fx6EI$2D@wqUpxZ|$EjnP9a&AZFiGIF6Py=SdmO1zD&=k-@DAoutr=GxD2Yd*3=E*=Oqcc&Wq@IUQCAaXW?02SN=o1$5?DK5uX$8Pu^9oqREGxW7Z3K*T$vKwW27j=RVO6_V#KV4*!JjjVwr&vkgsNvah-k|11MTiHmGFhc7AZXuf*nHu*pVAb|cCXbmTFr#Iv28v#%Kc|QyrofF_SE@?WgSv6#" then -- Make the "Key" whatever you wish.
+			script.Parent.Parent:TweenPosition(UDim2.new(0.383,0,-0.9,0), "Out", "Quad", 1, true)
+			script.Parent.Parent.Parent.Frame.Visible = true
+			wait(5)
+			script.Parent.Parent:Destroy() -- Destroys the GUI after a set time
+			print("Destroyed!")
+		elseif -- Tweening | If you want it to do a different tween just change the "Quad" to another tween animation
+			key.Text == "" then
+			key.Text = "" else
+			key.Text = "Incorrect, try again."
+			wait(1)
+			key.Text = ""
+		end
+	end)
 end
-if premium == false then
-	wait(0.1)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/alwaisnight"))()
-	wait(0.1)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
-	wait(0.1)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware"))()
-end
-if premium == true then
-    print"premium check : ok"
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/PremiumOnly"))()
-end
-
-
-
-local NotificationBindable = Instance.new("BindableFunction")
-NotificationBindable.OnInvoke = callback
-game.StarterGui:SetCore("SendNotification",  {
- Title = "🔔 Notification🔔";
- Text = "load Finished!!";
- Icon = 7519363654;
- Duration = 5;
- Button1 = "ok";
- Callback = NotificationBindable;
-})
-local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
-event:FireServer("Sky Central is loaded!!", "All")
-
-
-local gods = {
-3203041885,
-}
-
-local godsalt = {
-2754364940,
-}
-
-local Tier1 = {
-122,
-}
-
-local Tier2 = {
-211,
-}
-
-function swagnamesprout()
-    for _,Player in pairs(game:GetService('Players'):GetChildren()) do
-        if table.find(gods, Player.UserId) then
-            if Player.Character then
-                if Player.Character.Parent.Name == 'Players' then
-                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. Player.DisplayName)
-                end
-            end
-        elseif table.find(godsalt, Player.UserId) then
-               if Player.Character then
-             if Player.Character.Parent.Name == 'Players' then
-                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
-             end
-         end
-	elseif table.find(Tier2, Player.UserId) then
-		if Player.Character then
-			if Player.Character.Parent.Name == 'Players' then
-              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟]' .. Player.DisplayName)
-             	end
-        end
-	elseif table.find(Tier1, Player.UserId) then
-		if Player.Character then
-			if Player.Character.Parent.Name == 'Players' then
-              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
-                    end
-                end
-            end
-        end
-    end
-
-local success,err = pcall(swagnamesprout)
-return ModIDS
-
---[[	
-elseif table.find(godsalt, Player.UserId) then
-		if Player.Character then
-			if Player.Character.Parent.Name == 'Players' then
-              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
-             	end
-        end  ]]
+coroutine.wrap(GWEQH_fake_script)()
