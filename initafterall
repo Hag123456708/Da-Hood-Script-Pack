@@ -1,0 +1,118 @@
+local plr = game.Players.LocalPlayer
+local premium = false
+
+if plr.Name == "NotSkyy00" then
+    rconsoleprint('@@YELLOW@@')
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+    rconsoleprint("Sky Central by NotSkyy00")
+    rconsoleprint("\n")
+    rconsoleprint("-------------------------------------------")
+    messagebox("Thanks for buying premium","PREMIUM!!",0)
+	print("player is a premium user")
+	rconsoleprint("\n")
+	rconsoleprint("Premium : ON")
+	rconsoleprint("\n")
+	premium = true
+else
+    rconsoleprint('@@RED@@')
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+    rconsoleprint("Sky Central by NotSkyy00")
+    rconsoleprint("\n")
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+    rconsoleprint("Premium : off")
+    rconsoleprint("\n")
+    rconsoleprint("buy premium at https://discord.gg/DMu7RcMNBc (copied to clipboard)")
+    setclipboard("https://discord.gg/DMu7RcMNBc")
+    rconsoleprint("\n")
+    rconsoleprint("-------------------------------------------")
+    rconsoleprint("\n")
+end
+if premium == false then
+	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/trashtalk"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/alwaisnight"))()
+	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/loolz"))()
+	wait(0.1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/spaceware"))()
+end
+if premium == true then
+    print"premium check : ok"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NotSkyy/Da-Hood-Script-Pack/main/PremiumOnly"))()
+end
+
+
+
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "🔔 Notification🔔";
+ Text = "load Finished!!";
+ Icon = 7519363654;
+ Duration = 5;
+ Button1 = "ok";
+ Callback = NotificationBindable;
+})
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+event:FireServer("Sky Central is loaded!!", "All")
+
+
+local gods = {
+3203041885,
+}
+
+local godsalt = {
+2754364940,
+}
+
+local Tier1 = {
+122,
+}
+
+local Tier2 = {
+211,
+}
+
+function swagnamesprout()
+    for _,Player in pairs(game:GetService('Players'):GetChildren()) do
+        if table.find(gods, Player.UserId) then
+            if Player.Character then
+                if Player.Character.Parent.Name == 'Players' then
+                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. Player.DisplayName)
+                end
+            end
+        elseif table.find(godsalt, Player.UserId) then
+               if Player.Character then
+             if Player.Character.Parent.Name == 'Players' then
+                    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
+             end
+         end
+	elseif table.find(Tier2, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟]' .. Player.DisplayName)
+             	end
+        end
+	elseif table.find(Tier1, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
+                    end
+                end
+            end
+        end
+    end
+
+local success,err = pcall(swagnamesprout)
+return ModIDS
+
+--[[	
+elseif table.find(godsalt, Player.UserId) then
+		if Player.Character then
+			if Player.Character.Parent.Name == 'Players' then
+              	    Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💫]' .. Player.DisplayName)
+             	end
+        end  ]]
